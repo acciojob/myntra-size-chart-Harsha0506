@@ -3,9 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Size Chart</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 40px auto;
+      font-family: Arial, sans-serif;
+    }
+    thead th {
+      background-color: #a94442;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #7d2f2f;
+    }
+    tbody td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    tbody tr:nth-child(1) td {
+      background-color: #e57373; /* Waist row color */
+      color: #fff;
+    }
+    tbody tr:nth-child(2) td {
+      background-color: #f5c6c6; /* Chest row color */
+    }
+    tbody tr:nth-child(3) td {
+      background-color: #e0e0e0; /* Sleeve row color */
+    }
+    tbody td:first-child {
+      font-weight: bold;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-
   <table>
     <thead>
       <tr>
@@ -27,14 +60,6 @@
         <td>32</td>
       </tr>
       <tr>
-        <td>Length</td>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-      </tr>
-      <tr>
         <td>Chest</td>
         <td>34</td>
         <td>34</td>
@@ -52,6 +77,5 @@
       </tr>
     </tbody>
   </table>
-
 </body>
 </html>
